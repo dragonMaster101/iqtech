@@ -22,4 +22,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/admin', 'AdminController@index');
+//grouping all the admin routed with a prefix
+Route::prefix('admin')->group(function(){
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::get('/', 'AdminController@index')-> name('admin.dashboard');
+});
+
+

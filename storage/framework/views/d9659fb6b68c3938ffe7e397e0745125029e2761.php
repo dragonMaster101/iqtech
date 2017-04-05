@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php echo e(asset('css/iqtech.css')); ?>" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -61,9 +63,11 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+
                                         <a href="<?php echo e(route('logout')); ?>"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+                                            <i class="fa fa-sign-out" aria-hidden="true"></i>
                                             Logout
                                         </a>
 

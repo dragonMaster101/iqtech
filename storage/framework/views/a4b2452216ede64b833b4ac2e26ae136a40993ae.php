@@ -6,11 +6,11 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading"><?php echo e(Auth::user()->name); ?>'s Dashboard</div>
+                <div class="panel-heading"><?php echo e(Auth::user()->name); ?>'s Account Summary</div>
 
                 <div class="panel-body">
                     <div class="col-md-4 col-sm-4 col-xs-10 ">
-                        <img src="uploads/avatar.jpg" style="height:150px; width:150px;" class="img-responsive">
+                        <img src="uploads/avatar.png" style="height:150px; width:150px;" class="img-responsive">
                     </div>
 
                     <div class="col-md-4 col-sm-4 col-xs-6" style="">
